@@ -100,8 +100,7 @@
 .searchType:not(:checked) + label{
 	position: relative;
 	display: inline-block;
-    width: 8vw;
-    height: 8vh;
+    width: 8rem;
 	margin: 0.5vw;
 	text-align: center;
 	border-radius: 0.5rem;
