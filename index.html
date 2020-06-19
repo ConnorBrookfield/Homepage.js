@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+
+<head>
+    <title>_\|/_ * * Home * * _\|/_</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+    <script src="index.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule="" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>   
+</head>
+
+<body class="background">
+    <h1 id="clock" class="centerElement"></h1>
+    <div class="mainContent">
+        <form name="searchForm" onSubmit="submitSearch()">
+            <div class="searchBox">
+                <ion-input type="search" id="searchQuery"/>
+            </div>
+            <br>
+            <input class="searchType" type="radio" name="filters" id="duck" value="duck" checked>
+            <label class="for-searchType-filters" for="duck">
+                <ion-icon class="icon" name="search"></ion-icon>
+            </label>
+
+            <input class="searchType" type="radio" name="filters" id="image" value="image">
+            <label class="for-searchType-filters" for="image">
+                <ion-icon class="icon" name="image"></ion-icon>
+            </label>
+
+            <input class="searchType" type="radio" name="filters" id="map" value="map">
+            <label class="for-searchType-filters" for="map">
+                <ion-icon class="icon" name="map"></ion-icon>
+            </label>
+
+            <input class="searchType" type="radio" name="filters" id="youtube" value="youtube">
+            <label class="for-searchType-filters" for="youtube">
+                <ion-icon class="icon" name="logo-youtube"></ion-icon>
+            </label>
+
+            <input class="searchType" type="radio" name="filters" id="stackoverflow" value="stackoverflow">
+            <label class="for-searchType-filters" for="stackoverflow">
+                <ion-icon class="icon" name="logo-stackoverflow"></ion-icon>
+            </label>
+        </form>
+    </div>
+</body>
+
+</html>
