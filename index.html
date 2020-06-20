@@ -19,9 +19,9 @@
     <div class="mainContent">
         <form name="searchForm" onSubmit="submitSearch()">
             <div class="searchBox">
-                <ion-input type="search" id="searchQuery"/>
+                <ion-input type="search" id="searchQuery" ondblclick="submitSearch()"/>
             </div>
-            <br>
+            <br><br><br>
             <input class="searchType" type="radio" name="filters" id="duck" value="duck" checked>
             <label class="for-searchType-filters" for="duck">
                 <ion-icon class="icon" name="search"></ion-icon>
