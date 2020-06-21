@@ -1,8 +1,10 @@
+//Submit Search Function
 function submitSearch() {
     var checkedBox = document.querySelector('input[name=filters]:checked').value
     var url;
     var searchText = document.getElementById("searchQuery").value;
     
+    //Page Redirection logic
     switch (checkedBox) {
         case "duck":
             url = "http://www.duckduckgo.com/?q=" + searchText;
@@ -24,12 +26,7 @@ function submitSearch() {
             break;
     }
     
+    //Redirecting the page to the desired result
     window.location.href = url;
     alert("Searching...");
-}
-
-window.onload = function currentTime(){
-    var d = new Date();
-    document.getElementById("clock").innerText = d.toLocaleTimeString();
-    setInterval(currentTime, 1000);
 }
