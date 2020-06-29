@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 
 <head>
-    <title>_\|/_ Home _\|/_</title>
+    <title>Mycelium | Centralize</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
     <script src="index.js"></script>
@@ -15,13 +15,13 @@
 </head>
 
 <body class="background">
-    <h1 id="clock" class="centerElement"></h1>
     <div class="mainContent">
-        <form name="searchForm" onSubmit="submitSearch()">
-            <div class="searchBox">
-                <ion-input type="search" id="searchQuery" ondblclick="submitSearch()"/>
+        <h1 id="title">Mycelium</h1>
+        <form onsubmit="submitSearch()">
+            <div>
+                <ion-input type="search" id="searchBox" ondblclick="submitSearch()"/>
             </div>
-            <br><br><br>
+            <br><br>
             <input class="searchType" type="radio" name="filters" id="duck" value="duck" checked>
             <label class="for-searchType-filters" for="duck">
                 <ion-icon class="icon" name="search"></ion-icon>

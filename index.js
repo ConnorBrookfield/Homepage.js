@@ -1,17 +1,20 @@
 //Submit Search Function
 function submitSearch() {
     var checkedBox = document.querySelector('input[name=filters]:checked').value
-    var url;
-    var searchText = document.getElementById("searchQuery").value;
+    var url = "https://www.";
+    var searchText = document.getElementById("searchBox").value;
     
     //Page Redirection logic
     switch (checkedBox) {
         case "duck":
-            url = "http://www.duckduckgo.com/?q=" + searchText;
+            if(searchText.indexOf(".") < 1){
+                url = "http://www.duckduckgo.com/?q=";
+            }
+            url += searchText;
             break;
         case "image":
             url = "http://www.duckduckgo.com/?q=" + searchText + "&t=ffab&iax=images&ia=images";
-            break
+            break;
         case "map":
             url = "https://www.openstreetmap.org/search?query=" + searchText;
             break;
@@ -27,6 +30,5 @@ function submitSearch() {
     }
     
     //Redirecting the page to the desired result
-    window.location.href = url;
-    alert("Searching...");
+    window.open(url);
 }
