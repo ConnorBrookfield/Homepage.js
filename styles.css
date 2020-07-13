@@ -25,8 +25,9 @@
     top: 5vh;
     left: 50vw;
     right: 50vw;
-    bottom: 5vh;
+    bottom: 10vh;
     font-family: "Defont";
+
 }
 
 /* Title Heading */
@@ -41,7 +42,7 @@
 #searchBox {
     background-color: black;
     color:white;
-    border-radius: 0.5em;
+    border-radius: 2vw;
     font-size: 5vw;
     opacity: 0.8;
     width: 90vw;
@@ -70,8 +71,8 @@
 	position: relative;
 	display: inline-block;
     width: 15vw;
-	margin: 2px;
-	border-radius: 2vw;
+	margin: 1vw;
+	border-radius: 1vw;
     cursor: pointer;
     color: black;
     line-height: 0.7em;
@@ -94,7 +95,7 @@
 	left: 0px;
 	width: 100%;
 	height: 100%;
-    border-radius: 2vw;
+    border-radius: 1vw;
     background-color: red;
     z-index: -2;
 }
