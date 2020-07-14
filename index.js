@@ -1,6 +1,6 @@
 //Submit Search Function
 function submitSearch() {
-    var checkedBox = document.querySelector('input[name=filters]:checked').value
+    var checkedBox = document.querySelector('input[name=filters]:checked').value;
     var url = "https://www.";
     var searchText = document.getElementById("searchBox").value;
     
@@ -16,13 +16,13 @@ function submitSearch() {
             url = "http://www.duckduckgo.com/?q=" + searchText + "&t=ffab&iax=images&ia=images";
             break;
         case "map":
-            url = "https://www.openstreetmap.org/search?query=" + searchText;
+            url = "https://www.google.com/maps/place/" + searchText;
             break;
         case "youtube":
             url = "https://www.youtube.com/results?search_query=" + searchText;
             break;
-        case "stackoverflow":
-            url = "https://stackoverflow.com/search?q=" + searchText;
+        case "amazon":
+            url = "https://www.amazon.co.uk/s?k=" + searchText;
             break;
         default:
             url = "index.html";

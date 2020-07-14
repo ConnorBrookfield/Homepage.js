@@ -22,29 +22,27 @@
                 <ion-input type="search" id="searchBox"/>
             </div>
             <br>
+            <input class="searchType" type="radio" name="filters" id="map" value="map">
+            <label class="for-searchType-filters" for="map" ondblclick="submitSearch()">
+                <ion-icon class="icon" name="earth"></ion-icon>
+            </label>
+            <input class="searchType" type="radio" name="filters" id="amazon" value="amazon">
+            <label class="for-searchType-filters" for="amazon" ondblclick="submitSearch()">
+                <ion-icon class="icon" name="logo-amazon"></ion-icon>
+            </label>            
+
             <input class="searchType" type="radio" name="filters" id="duck" value="duck" checked>
             <label class="for-searchType-filters" for="duck" ondblclick="submitSearch()">
                 <ion-icon class="icon" name="search"></ion-icon>
-            </label>
-
-            <input class="searchType" type="radio" name="filters" id="image" value="image">
-            <label class="for-searchType-filters" for="image" ondblclick="submitSearch()">
-                <ion-icon class="icon" name="image"></ion-icon>
-            </label>
-
-            <input class="searchType" type="radio" name="filters" id="map" value="map">
-            <label class="for-searchType-filters" for="map" ondblclick="submitSearch()">
-                <ion-icon class="icon" name="map"></ion-icon>
             </label>
 
             <input class="searchType" type="radio" name="filters" id="youtube" value="youtube">
             <label class="for-searchType-filters" for="youtube" ondblclick="submitSearch()">
                 <ion-icon class="icon" name="logo-youtube"></ion-icon>
             </label>
-
-            <input class="searchType" type="radio" name="filters" id="stackoverflow" value="stackoverflow">
-            <label class="for-searchType-filters" for="stackoverflow" ondblclick="submitSearch()">
-                <ion-icon class="icon" name="logo-stackoverflow"></ion-icon>
+            <input class="searchType" type="radio" name="filters" id="image" value="image">
+            <label class="for-searchType-filters" for="image" ondblclick="submitSearch()">
+                <ion-icon class="icon" name="images"></ion-icon>
             </label>
         </form>
     </div>
