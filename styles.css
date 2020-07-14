@@ -27,35 +27,34 @@
     right: 50vw;
     bottom: 10vh;
     font-family: "Defont";
-
+    transform: scale(0.85);
 }
 
 /* Title Heading */
 #title {
-    font-size: 15vw;
+    font-size: 13vw;
     margin-bottom: 4vw;
-    color: aquamarine;
-    text-shadow: 4px 4px 4px black;
+    color: rgba(127, 255, 212, 0.85);
+    text-shadow: 10px 10px 10px black;
 }
 
 /* SearchBox */
 #searchBox {
     background-color: black;
     color:white;
+    opacity: 0.8;
     border-radius: 2vw;
     font-size: 5vw;
-    opacity: 0.8;
     width: 90vw;
-    height: 15vw;
+    height: 11vw;
 }
 #searchBox:hover {
     opacity: 0.9;
-    box-shadow: 0px 0px 20px white;
 }
 #searchBox:focus-within {
     opacity: 0.9;
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
     box-shadow: 0px 0px 30px white;
 }
   
@@ -70,40 +69,26 @@
 .searchType:not(:checked) + label{
 	position: relative;
 	display: inline-block;
-    width: 15vw;
-	margin: 1vw;
+    width: 12vw;
+    margin: 1vw;
 	border-radius: 1vw;
     cursor: pointer;
     color: black;
     line-height: 0.7em;
 }
 .searchType:checked + label{
-    box-shadow: 0px 0px 20px black;
-}
-.searchType:not(:checked) + label{
-    background-color: grey;
+    box-shadow: 0px 0px 50px black;
 }
 
 .searchType:not(:checked) + label:hover{
 	box-shadow: 0px 0px 20px black;
 }
-.searchType:checked + label::before,
-.searchType:not(:checked) + label::before{
-	position: absolute;
-    content: '';
-    top: 0px;
-	left: 0px;
-	width: 100%;
-	height: 100%;
-    border-radius: 1vw;
-    background-color: red;
-    z-index: -2;
-}
+
 .searchType:checked + label .icon,
 .searchType:not(:checked) + label .icon{
-    font-size: 12vw;
-    color: black;
+    font-size: 10vw;
+    color: rgba(0, 0, 0, 0.45);
 }
 .searchType:checked + label .icon {
-    color: white;
+    color: rgba(0, 0, 0, 0.9);
 }
